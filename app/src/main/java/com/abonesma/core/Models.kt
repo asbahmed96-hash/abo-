@@ -1,0 +1,11 @@
+package com.abonesma.core
+data class Lesson(val title: String, val text: String)
+data class Chapter(val title: String, val lessons: List<Lesson>)
+data class Formula(val expr: String, val source: String)
+data class Definition(val term: String, val meaning: String)
+data class Comparison(val a: String, val b: String, val source: String)
+data class Flashcard(val front: String, val back: String, val kind: String)
+data class Mcq(val q: String, val options: List<String>, val correct: Int, val source: String)
+data class TrueFalse(val statement: String, val answer: Boolean, val source: String)
+data class Essay(val q: String, val reference: String)
+data class QuestionBank(val mcq: List<Mcq>, val tf: List<TrueFalse>, val essay: List<Essay>, val notes: List<String>)
