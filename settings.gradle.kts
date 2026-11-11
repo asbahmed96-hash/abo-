@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ABO_NESMA"
+rootProject.name = "abo-"
 include(":app")
